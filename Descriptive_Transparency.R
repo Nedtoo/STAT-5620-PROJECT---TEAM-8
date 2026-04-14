@@ -13,7 +13,7 @@ library(scales)
 library(tibble)
 
 # ---- 1. Read dataset ----
-df <- read_excel("C:/Users/gracc/Documents/Datasets.xlsx") %>%
+df <- read_excel("C:/Users/HP/Desktop/STAT 5620/STAT 5620 PROTECT - TEAM 8/Datasets 1.xlsx") %>%
   clean_names()
 
 # Check names
@@ -30,7 +30,7 @@ themes_long <- df %>%
     location = str_trim(location),
     year = as.factor(year)
   ) %>%
-  filter(ethical_keywords != "") %>%
+  filter(ethical_keywords != "")%>%
   distinct(doi, year, domain_filter, location, ethical_keywords, .keep_all = TRUE)
 
 # ---- 3. PAPER-LEVEL DESCRIPTIVE TABLES ----

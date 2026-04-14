@@ -17,7 +17,7 @@ library(logistf)
 # -----------------------------
 # 1. Read data
 # -----------------------------
-df <- read_excel("Datasets.xlsx") %>%
+df <- read_excel("Datasets 1.xlsx") %>%
   clean_names()
 
 # -----------------------------
